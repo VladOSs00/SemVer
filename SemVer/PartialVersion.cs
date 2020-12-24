@@ -4,7 +4,6 @@ using System.Text.RegularExpressions;
 
 namespace SemVer
 {
-
     public class PartialVersion
     {
         public int? Major { get; set; }
