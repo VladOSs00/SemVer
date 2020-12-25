@@ -23,9 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/SemVer-actions@v2
-        with:
-          access-token: ${{secrets.ACCESS_TOKEN }}  
+
+  
+      uses: actions/SemVer-action@v1
+      with:
+        who-to-greet: 'Mona the Octocat'
+ 
+      shell: bash
 
       # Runs a single command using the runners shell
       - name: Run build script
