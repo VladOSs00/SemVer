@@ -24,7 +24,7 @@ jobs:
     steps:
 # Checks-out your repository under $GITHUB_WORKSPACE, so your job crbosity normal
       - uses: actions/checkout@master
-      - uses: VladOSs00/SemVer@master
+    
       # Runs a single command using the runners shell
       - name: Run build script
         run:  dotnet build 
